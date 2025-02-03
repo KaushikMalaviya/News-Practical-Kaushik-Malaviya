@@ -37,10 +37,10 @@ class MainActivity : AppCompatActivity() {
 
         swipeRefreshLayout.setOnRefreshListener {
             viewModel.refreshNews(getString(R.string.news_api_key))
-            swipeRefreshLayout.isRefreshing = false // Stop refresh animation after data is fetched
+            swipeRefreshLayout.isRefreshing = false
         }
 
-        // Initial News Fetch
+
         viewModel.fetchNews(getString(R.string.news_api_key))
     }
 }

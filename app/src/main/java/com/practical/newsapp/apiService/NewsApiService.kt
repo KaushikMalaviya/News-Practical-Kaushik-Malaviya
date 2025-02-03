@@ -15,6 +15,3 @@ interface NewsApiService {
     ): NewsResponse
 
 }
-
-
-data class NewsResponse(val articles: List<Article>)

@@ -10,7 +10,7 @@ object RetrofitInstance {
 
     val api: NewsApiService by lazy {
         Retrofit.Builder()
-            .baseUrl("https://newsapi.org/v2/") // Ensure this is correct!
+            .baseUrl("https://newsapi.org/v2/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
